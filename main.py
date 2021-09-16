@@ -35,4 +35,4 @@ async def on_message(message):
 
 client.run(my_secret)
 
-#
+#ciao sono lucia e sono una sirena
