@@ -37,9 +37,14 @@ async def on_message(message):
         await message.channel.send(quote)
 
     msg = message.content
-    
-    if any(word in msg for word in sad_words):
-      await message.channel.send(random.choice(starter_encouragments))
+    quale_vaccino = ['quale', 'che tipo']
+    if "vaccino" in msg:
+      await message.channel.send("si mi sono vaccinato")
+
+    if any(word in msg for word in quale_vaccino):
+      await message.channel.send("quello che si fanno tutti")
+
+
 client.run(my_secret)
 
 #ciao sono lucia e sono una sirena   eeeee
