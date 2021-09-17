@@ -48,4 +48,4 @@ async def on_message(message):
 keep_alive()
 client.run(my_secret)
 
-#ciao sono lucia e sono una sirena   eeeeeeeeeeee
+#ciao sono lucia e sono una sirena   eeeee
