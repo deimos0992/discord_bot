@@ -3,7 +3,8 @@ import os
 import requests
 import json
 import random
-
+from replit import db
+from keep_alive import keep_alive
 
 #Create client
 client = discord.Client()
@@ -44,7 +45,7 @@ async def on_message(message):
     if any(word in msg for word in quale_vaccino):
       await message.channel.send("quello che si fanno tutti")
 
-
+keep_alive()
 client.run(my_secret)
 
 #ciao sono lucia e sono una sirena   eeeee
