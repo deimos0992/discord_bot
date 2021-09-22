@@ -6,6 +6,7 @@ import random
 from replit import db
 from keep_alive import keep_alive
 
+
 #Create client
 client = discord.Client()
 my_secret = os.environ['TOKEN']
@@ -44,6 +45,10 @@ async def on_message(message):
 
     if any(word in msg for word in quale_vaccino):
       await message.channel.send("quello che si fanno tutti")
+
+
+    await message.channel.send(f"a fess e mamm {(message.author.mention)}")
+   
 
 keep_alive()
 client.run(my_secret)
